@@ -3,12 +3,9 @@ from sklearn import datasets, svm, metrics
 from sklearn.model_selection import train_test_split
 
 # 1. LOAD THE DATA
-# The 'digits' dataset contains 1,797 8x8 pixel images of hand-written digits.
 digits = datasets.load_digits()
 
 # 2. PRE-PROCESS THE IMAGES
-# Machine learning models usually can't "see" a 2D grid (8x8). 
-# We must 'flatten' each image into a single row of 64 numbers (8*8=64).
 n_samples = len(digits.images)
 data = digits.images.reshape((n_samples, -1))
 
@@ -20,7 +17,6 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # 4. INITIALIZE THE MODEL (The "Brain")
-# SVC stands for Support Vector Classifier. 
 # 'gamma' is a tuning parameter that determines how much influence 
 # a single training example has. Small gamma means 'far' influence.
 clf = svm.SVC(gamma=0.001)
