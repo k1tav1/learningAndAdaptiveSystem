@@ -1,0 +1,15 @@
+macbookpro@Kitavis-Macbook-Pro dataset01 %  cd /Users/macbookpro/dataset01 ; /usr/bin/env /usr/local/bin/pytho
+n3 /Users/macbookpro/.vscode/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy/adapter/../../debugpy/
+launcher 59617 -- /Users/macbookpro/dataset01/mlp.py 
+--- Training Started ---
+Epoch 0 Error: 0.4994
+Epoch 2000 Error: 0.4965
+Epoch 4000 Error: 0.4358
+Epoch 6000 Error: 0.3605
+Epoch 8000 Error: 0.3071
+
+--- Final Predictions After Learning ---
+[[0.20369158]
+ [0.73603066]
+ [0.73604444]
+ [0.34370702]]
