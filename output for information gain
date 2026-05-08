@@ -1,0 +1,49 @@
+macbookpro@Kitavis-Macbook-Pro dataset01 %  cd /Users/macbookpro/dataset01 ; /usr/bin/env /usr/local/bin/pytho
+n3 /Users/macbookpro/.vscode/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy/adapter/../../debugpy/
+launcher 56335 -- /Users/macbookpro/dataset01/info-gain.py 
+============================================================
+  PLAY TENNIS — Entropy & Information Gain Calculator
+============================================================
+
+  Overall Entropy H(S) = 0.9403 bits
+  (Yes: 9, No: 5, Total: 14)
+
+------------------------------------------------------------
+  Information Gain for Each Feature:
+------------------------------------------------------------
+
+  Feature: Outlook
+      Overcast: Yes=4, No=0, Total=4, Entropy=0.0000
+          Rain: Yes=3, No=2, Total=5, Entropy=0.9710
+         Sunny: Yes=2, No=3, Total=5, Entropy=0.9710
+    → Information Gain = 0.2467 bits
+
+  Feature: Temperature
+          Cool: Yes=3, No=1, Total=4, Entropy=0.8113
+           Hot: Yes=2, No=2, Total=4, Entropy=1.0000
+          Mild: Yes=4, No=2, Total=6, Entropy=0.9183
+    → Information Gain = 0.0292 bits
+
+  Feature: Humidity
+          High: Yes=3, No=4, Total=7, Entropy=0.9852
+        Normal: Yes=6, No=1, Total=7, Entropy=0.5917
+    → Information Gain = 0.1518 bits
+
+  Feature: Wind
+        Strong: Yes=3, No=3, Total=6, Entropy=1.0000
+          Weak: Yes=6, No=2, Total=8, Entropy=0.8113
+    → Information Gain = 0.0481 bits
+
+============================================================
+  SUMMARY — Features Ranked by Information Gain
+============================================================
+
+  Rank   Feature         Info Gain (bits)  
+  ------ --------------- ------------------
+  1      Outlook         0.2467             ← Best split
+  2      Humidity        0.1518            
+  3      Wind            0.0481            
+  4      Temperature     0.0292            
+
+  ✅ Best feature to split on: Outlook
+     (Highest information gain = 0.2467 bits)
